@@ -1,0 +1,90 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Inter">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'img/favicon/apple-touch-icon.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'img/favicon/favicon-32x32.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'img/favicon/favicon-16x16.png' %}">
+    <link rel="manifest" href="{% static 'img/favicon/site.webmanifest' %}">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <title>TikTok.openai</title>
+</head>
+<body>
+    <header style="height: 100px; display: none;">
+        <nav>
+            <div class="notif">
+                <a href="">Notif</a>
+            </div>
+            <div class="person">
+                <a href="">Name</a>
+                <div class="person_info">
+                    <div class="person_info_up">
+                        <h2>Name</h2>
+                        <p><span>@ mail</span></p>
+                    </div>
+                    <div class="person_info_down">
+                        <div>Settings</div>
+                        <div>Location</div>
+                        <div>Help</div>
+                        <div>Sign out</div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="start_get">
+                <header>
+                    <img src="{% static 'img/LOGO.png' %}" alt="">
+                    <h1>TikTok.openai</h1>
+                </header>
+                <br><br>
+                <div class="start_get_box">
+                    <div class="box1 flex_between">
+                        <img src="{% static 'img/tik-tok.png' %}" alt="">
+                        <p>Збільште популярність своїх TikTok постів за допомогою нашого AI SMM агентства! Ми пропонуємо просування ваших відео через лайки, коментарі та перегляди. Наша команда експертів розробить ефективну стратегію, яка допоможе вам привернути більше уваги і підвищити вашу видимість в TikTok. Довіртеся професіоналам і досягніть нових висот у своїй популярності!</p>
+                    </div>
+                    <br>
+                    <div class="box2 flex_between">
+                        <img src="{% static 'img/tag.png' %}" alt="">
+                        <p>Наша команда професіоналів гарантує швидку обробку замовлень і миттєву активність на вашому профілі. Ми пропонуємо просту та безпечну систему оплати. Збільште свою видимість у TikTok вже сьогодні та досягніть успіху у світі соціальних медіа!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="answer" style="display: none;">
+            <div id="chatContainer">
+                <!-- Здесь будут отображаться сообщения -->
+                <script src="//static.liqpay.ua/libjs/checkout.js" async></script>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="overflow">
+
+        </div>
+        <div class="end" id="endElement">
+            <div class="chat">
+                <form action="" id="myForm">
+                    <div class="message">
+                        <input id="messageInput" type="text" placeholder="Send a message." required>
+                        <button type="submit" style="display: flex;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" class="h-4 w-4 m-1 md:m-0" stroke-width="2" style="width: 20px; color:gray"><path d="M.5 1.163A1 1 0 0 1 1.97.28l12.868 6.837a1 1 0 0 1 0 1.766L1.969 15.72A1 1 0 0 1 .5 14.836V10.33a1 1 0 0 1 .816-.983L8.5 8 1.316 6.653A1 1 0 0 1 .5 5.67V1.163Z" fill="currentColor"></path></svg></button>
+                    </div>
+                </form>
+                <br>
+                <a href="https://www.privacypolicyonline.com/live.php?token=6ZXANftaOecmeIWaVx6XA125SL6mDqWd">Terms of use</a>
+                <a href="https://www.privacypolicyonline.com/live.php?token=ImVStDCUtjFsD075uhKKHqEiWpzMeswW">Privacy Policy</a>
+            </div>
+        </div>
+      </footer>      
+</body>
+<script src="{% static 'js/main.js' %}"></script>
+</html>
